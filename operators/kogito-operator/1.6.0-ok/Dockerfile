@@ -15,3 +15,6 @@ LABEL operators.operatorframework.io.test.mediatype.v1=scorecard+v1
 COPY manifests /manifests/
 COPY metadata /metadata/
 COPY tests/scorecard /tests/scorecard/
+
+
+RUN echo "hello, demo!"
