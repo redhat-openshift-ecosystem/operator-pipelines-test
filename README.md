@@ -1,4 +1,4 @@
 # operator-pipelines-test
-This repository hosts the example operators (and example operator Pull Requests),
+This repository hosts the example operators (and example Pull Requests with bundle submission),
 which are used as input for testing the [Operator-pipelines](https://github.com/redhat-openshift-ecosystem/operator-pipelines).
 
