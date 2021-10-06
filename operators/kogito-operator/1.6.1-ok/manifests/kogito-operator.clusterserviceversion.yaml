@@ -96,11 +96,14 @@ spec:
       version: v1beta1
   description: |-
     Kogito Operator is designed to deploy Kogito services from source (only on OpenShift) and every piece of infrastructure that the services might need:
+
     * Creates two kinds of build configuration: Native or JVM. For more information refer to [Native build and deployment](https://docs.jboss.org/kogito/release/latest/html_single/#_native_build_and_deployment) section on our docs
     * Builds a Kogito service from a remote git repository and creates a custom image for the given runtime: Quarkus or Springboot. [See more](https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-operator-deployment-options_kogito-deploying-on-openshift).
     * Installs the [Kogito Data Index Service](https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-operator-with-data-index-service_kogito-deploying-on-openshift) to enable data index feature for Kogito services.
     * Installs the [Kogito Jobs Service](https://docs.jboss.org/kogito/release/latest/html_single/#con-kogito-operator-with-jobs-service_kogito-deploying-on-openshift) to enable jobs scheduling.
+
     For Kubernetes deployment of Kogito services, please refer to the section [Deploying Kogito services on Kubernetes](https://docs.jboss.org/kogito/release/latest/html_single/#proc-kogito-deploying-on-kubernetes_kogito-deploying-on-openshift) on our docs.
+
     **IMPORTANT!** Kogito Operator might need Infinispan Operator and Strimzi to implement persistence and messaging use cases if you do not provide these services beforehand.
     If you need these features to be automatically provisioned for you, bear in mind that those operators must be installed in the same namespace as the Kogito Operator.
   displayName: Kogito
