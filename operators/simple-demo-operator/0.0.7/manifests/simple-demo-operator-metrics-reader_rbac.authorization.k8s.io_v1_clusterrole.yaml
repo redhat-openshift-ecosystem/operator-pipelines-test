@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: simple-demo-operator-e2e-test-metrics-reader
+  name: simple-demo-operator-metrics-reader
 rules:
 - nonResourceURLs:
   - /metrics

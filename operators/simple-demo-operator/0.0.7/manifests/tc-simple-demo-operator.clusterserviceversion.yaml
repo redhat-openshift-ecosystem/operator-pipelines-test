@@ -18,7 +18,7 @@ metadata:
     capabilities: Basic Install
     operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-  name: simple-demo-operator-e2e-test.v0.0.4
+  name: tc-simple-demo-operator.v0.0.7
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -76,9 +76,9 @@ spec:
           - subjectaccessreviews
           verbs:
           - create
-        serviceAccountName: simple-demo-operator-e2e-test-controller-manager
+        serviceAccountName: tc-simple-demo-operator-controller-manager
       deployments:
-      - name: simple-demo-operator-e2e-test-controller-manager
+      - name: tc-simple-demo-operator-controller-manager
         spec:
           replicas: 1
           selector:
@@ -109,7 +109,7 @@ spec:
                 - --leader-elect
                 command:
                 - /manager
-                image: quay.io/opdev/simple-demo-operator-e2e-test@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+                image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
                 livenessProbe:
                   httpGet:
                     path: /healthz
@@ -134,7 +134,7 @@ spec:
                   allowPrivilegeEscalation: false
               securityContext:
                 runAsNonRoot: true
-              serviceAccountName: simple-demo-operator-e2e-test-controller-manager
+              serviceAccountName: tc-simple-demo-operator-controller-manager
               terminationGracePeriodSeconds: 10
       permissions:
       - rules:
@@ -169,7 +169,7 @@ spec:
           verbs:
           - create
           - patch
-        serviceAccountName: simple-demo-operator-e2e-test-controller-manager
+        serviceAccountName: tc-simple-demo-operator-controller-manager
     strategy: deployment
   installModes:
   - supported: true
@@ -185,7 +185,7 @@ spec:
   - simple
   links:
   - name: Simple Demo Operator
-    url: https://github.com/opdev/simple-demo-operator-e2e-test
+    url: https://github.com/opdev/simple-demo-operator
   maintainers:
   - email: jose.gonzalez@redhat.com
     name: Jose R. Gonzalez
@@ -193,9 +193,9 @@ spec:
   provider:
     name: The Partner Lifecycle Engineering Team
     url: github.com/opdev
-  version: 0.0.4
+  version: 0.0.7
   relatedImages:
   - name: kube-rbac-proxy
     image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c
   - name: manager
-    image: quay.io/opdev/simple-demo-operator-e2e-test@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+    image: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
