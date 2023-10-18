@@ -18,6 +18,13 @@ metadata:
     capabilities: Basic Install
     operators.operatorframework.io/builder: operator-sdk-v1.11.0+git
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+    containerImage: quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e
+    createdAt: 2023-08-25T18:35:00Z
+    support: ACME Ltd.
+    repository: https://example.com/foo/bar.git
+    categories: Cloud Provider
+    description: |
+      Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
   name: test-e2e-operator.v0.0.8
   namespace: placeholder
 spec:
