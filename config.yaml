@@ -2,3 +2,9 @@
 # The catalog for intended distribution.
 # Can be either "certified-operators" or "redhat-marketplace".
 organization: community-operators
+
+# List of repository maintainers for approval
+# in case of missing reviewers in ci.yaml file
+maintainers:
+  - mporrato
+  - ezopezo
