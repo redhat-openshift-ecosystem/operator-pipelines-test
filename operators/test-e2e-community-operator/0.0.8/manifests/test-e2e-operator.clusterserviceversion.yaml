@@ -25,7 +25,7 @@ metadata:
     categories: Cloud Provider
     description: |
       Et sapiente et incidunt animi. Ut molestias perferendis qui eaque laborum sit dolor. Beatae ut quae molestiae quis. Saepe est et soluta aliquam quaerat voluptatibus non voluptate.
-  name: test-e2e-operator.v0.0.8
+  name: test-e2e-community-operator.v0.0.8
   namespace: placeholder
 spec:
   minKubeVersion: 1.18.0
@@ -84,9 +84,9 @@ spec:
           - subjectaccessreviews
           verbs:
           - create
-        serviceAccountName: test-e2e-operator-controller-manager
+        serviceAccountName: test-e2e-community-operator-controller-manager
       deployments:
-      - name: test-e2e-operator-controller-manager
+      - name: test-e2e-community-operator-controller-manager
         spec:
           replicas: 1
           selector:
@@ -142,7 +142,7 @@ spec:
                   allowPrivilegeEscalation: false
               securityContext:
                 runAsNonRoot: true
-              serviceAccountName: test-e2e-operator-controller-manager
+              serviceAccountName: test-e2e-community-operator-controller-manager
               terminationGracePeriodSeconds: 10
       permissions:
       - rules:
@@ -177,7 +177,7 @@ spec:
           verbs:
           - create
           - patch
-        serviceAccountName: test-e2e-operator-controller-manager
+        serviceAccountName: test-e2e-community-operator-controller-manager
     strategy: deployment
   installModes:
   - supported: true
