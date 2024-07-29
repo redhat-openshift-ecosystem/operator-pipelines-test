@@ -1,6 +1,3 @@
 ---
+cert_project_id: "660d345800be06826aff1fc1" # staged
 merge: true
-reviewers: [rh-operator-bundle-test-e2e]
-
-fbc:
-  enabled: True
