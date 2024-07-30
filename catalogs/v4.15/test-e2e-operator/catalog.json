@@ -31,7 +31,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "test-e2e-operator",
-                "version": "v0.0.8"
+                "version": "0.0.8"
             }
         },
         {
