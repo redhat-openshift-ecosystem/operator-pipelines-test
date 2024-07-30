@@ -9,13 +9,13 @@
     "package": "test-e2e-operator",
     "entries": [
         {
-            "name": "test-e2e-operator.0.0.8"
+            "name": "test-e2e-operator.v0.0.8"
         }
     ]
 }
 {
     "schema": "olm.bundle",
-    "name": "test-e2e-operator.0.0.8",
+    "name": "test-e2e-operator.v0.0.8",
     "package": "test-e2e-operator",
     "image": "registry.connect.stage.redhat.com/opcert-e2e-testing/e2e-testing-operator2@sha256:3a74158fa190f0beb72dc0f9bd8870e7c9ffa17f54723a8ad0692e4dc4e7b83d",
     "properties": [
@@ -31,7 +31,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "test-e2e-operator",
-                "version": "0.0.8"
+                "version": "v0.0.8"
             }
         },
         {
