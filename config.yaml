@@ -4,6 +4,6 @@
 organization: certified-operators
 
 # list of allowed bundle registries
-allowed_registries:
+allowed_bundle_registries:
   - registry.connect.stage.redhat.com
   - quay.io/community-operator-pipeline-stage
