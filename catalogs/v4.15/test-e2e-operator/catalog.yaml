@@ -62,8 +62,6 @@ properties:
       name: RedHat
       url: www.redhat.com
 relatedImages:
-- image: gcr.io/kubebuilder/kube-rbac-proxy@sha256:d4883d7c622683b3319b5e6b3a7edfbf2594c18060131a8bf64504805f875522
-  name: kube-rbac-proxy
 - image: quay.io/rhn_apal/memcached-operator@sha256:ebbfedd514944e1a2a140f785f900d482eecbfff2e3d67bf76f6ee54569a49bc
   name: memcached-operator
 - image: registry.connect.stage.redhat.com/opcert-e2e-testing/e2e-testing-operator2@sha256:3a74158fa190f0beb72dc0f9bd8870e7c9ffa17f54723a8ad0692e4dc4e7b83d
