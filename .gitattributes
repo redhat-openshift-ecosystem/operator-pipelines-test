@@ -1,0 +1,1 @@
+catalogs/v4.19/test-e2e-operator-fbc-catalog/catalog.yaml filter=lfs diff=lfs merge=lfs -text
