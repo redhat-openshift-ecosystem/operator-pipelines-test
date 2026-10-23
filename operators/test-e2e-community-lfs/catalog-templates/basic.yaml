@@ -1,0 +1,13 @@
+---
+schema: olm.template.basic
+entries:
+  - schema: olm.package
+    name: test-e2e-community-lfs
+    defaultChannel: stable
+  - schema: olm.channel
+    name: stable
+    package: test-e2e-community-lfs
+    entries:
+      - name: test-e2e-community-lfs.v0.0.0
+  - schema: olm.bundle
+    image: "quay.io/rh-ee-mszymutk/large-bundle@sha256:24e6fdc5c945365f1fda3dfcc229e749279b244fe11328a8b7b1207908323633"
