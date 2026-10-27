@@ -1,0 +1,1 @@
+catalogs/v4.20/test-e2e-community-lfs/catalog.yaml filter=lfs diff=lfs merge=lfs -text
