@@ -1,0 +1,7 @@
+---
+merge: true
+reviewers: [rh-operator-bundle-test-e2e]
+
+fbc:
+  enabled: True
+  catalog_mapping: [{"template_name": "basic.yaml", "catalog_names": ["v4.20"], "type": "olm.template.basic"}]
