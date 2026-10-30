@@ -1,13 +1,19 @@
 ---
 schema: olm.template.basic
 entries:
-  - schema: olm.package
-    name: test-e2e-community-lfs
-    defaultChannel: stable
-  - schema: olm.channel
-    name: stable
-    package: test-e2e-community-lfs
-    entries:
-      - name: test-e2e-community-lfs.v0.0.0
-  - schema: olm.bundle
-    image: "quay.io/haripate/operator-pipeline-test@sha256:9f7d8da80ebd1c3b46157d96a07b4c497cf1c00e218d820c282d2bab46cf9706"
+- schema: olm.package
+  name: test-e2e-community-lfs
+  defaultChannel: stable
+- schema: olm.channel
+  name: stable
+  package: test-e2e-community-lfs
+  entries:
+  - name: test-e2e-community-lfs.v0.0.0
+  - name: test-e2e-community-lfs.v0.1.1-4
+    replaces: test-e2e-community-lfs.v0.0.0
+- schema: olm.bundle
+  image: 
+    quay.io/haripate/operator-pipeline-test@sha256:9f7d8da80ebd1c3b46157d96a07b4c497cf1c00e218d820c282d2bab46cf9706
+- schema: olm.bundle
+  image: 
+    quay.io/community-operator-pipeline-stage/test-e2e-community-lfs:0.1.1-4
